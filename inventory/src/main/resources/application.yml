@@ -1,0 +1,27 @@
+server:
+   port: 8070
+
+spring:
+   datasource:
+      url: jdbc:mysql://localhost:3306/inventorydb?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false
+      username: root
+      password: mapua2025
+      driver-class-name: com.mysql.cj.jdbc.Driver
+   jpa:
+      show-sql: true
+      hibernate:
+         ddl-auto: create
+         naming:
+            implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+            physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+   kafka:
+      consumer:
+         group-id: inventory-service
+         auto-offset-reset: earliest
+         key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+         value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+         properties:
+            spring.json.trusted.packages: com.santeco.pss.payload
+logging:
+   level:
+      com.santeco.pss: TRACE
