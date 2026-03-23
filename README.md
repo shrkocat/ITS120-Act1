@@ -1,4 +1,6 @@
-# 📦 PSS – Producer-Consumer Inventory System
+<div align="center">
+
+# PSS – Producer-Consumer Inventory System
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
@@ -7,15 +9,18 @@
 ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
 ![Lombok](https://img.shields.io/badge/Lombok-BC4521?style=for-the-badge&logo=lombok&logoColor=white)
 
+
+</div>
+
 ---
 
-## 📌 Overview
+## Overview
 
 This project is a **Producer-Consumer Inventory System (PSS)** built as a multi-module Spring Boot application using **Apache Kafka** for message streaming. It demonstrates core concepts of event-driven architecture by decoupling producers and consumers through a Kafka broker, with an inventory module tracking state changes.
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 ITS120-Act1/
@@ -29,7 +34,7 @@ ITS120-Act1/
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |---|---|
@@ -43,7 +48,7 @@ ITS120-Act1/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -80,7 +85,7 @@ cd inventory && mvn spring-boot:run
 
 ---
 
-## 🐳 Kafka Configuration
+## Kafka Configuration
 
 The `docker-compose.yml` sets up a single-node Kafka broker in KRaft mode (no Zookeeper):
 
@@ -93,7 +98,7 @@ The `docker-compose.yml` sets up a single-node Kafka broker in KRaft mode (no Zo
 
 ---
 
-## 📋 Module Overview
+## Module Overview
 
 **`producer`** — Publishes events or data to a Kafka topic. Acts as the entry point for new data into the system.
 
@@ -105,7 +110,7 @@ The `docker-compose.yml` sets up a single-node Kafka broker in KRaft mode (no Zo
 
 ---
 
-## 👤 Author
+## Author
 
 **shrkocat** — [github.com/shrkocat](https://github.com/shrkocat)
 
